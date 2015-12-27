@@ -1,0 +1,45 @@
+@import "../node_modules/normalize.css/normalize";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+  background-color: white;
+}
+
+header {
+  height: 30%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  h1 {
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+
+@media screen and (min-width: 600px) {
+  header {
+    height: 25%;
+
+    h1 {
+      font-size: 6rem;
+    }
+  }
+}
+

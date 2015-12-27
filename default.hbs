@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{@blog.title}}</title>
+    <link rel="stylesheet" href="{{asset "css/index.css"}}" />
+
+    {{ghost_head}}
+
+  </head>
+  <body>
+
+    <header style="background-image: url({{@blog.cover}})">
+      <h1>{{@blog.title}}</h1>
+    </header>
+
+    <div class="wrapper">
+      {{{body}}}
+    </div>
+
+  </body>
+</html>
