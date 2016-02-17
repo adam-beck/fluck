@@ -1,4 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @import "normalize.css";
+@import "highlight.js/styles/tomorrow.css";
 
 @import "./foundation.css";
 
@@ -73,12 +75,12 @@ img {
   max-width: 100%;
 }
 
-/* @media screen and (min-width: 60rem) { */
-/*   header { */
-/*     height: 40vh; */
+@media screen and (min-width: 60rem) {
+  header {
+    height: 40vh;
 
-/*     h1 { */
-/*       font-size: 8rem; */
-/*     } */
-/*   } */
-/* } */
+    h1 {
+      font-size: 8rem;
+    }
+  }
+}

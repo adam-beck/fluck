@@ -15,3 +15,8 @@ body {
   font-size: 1.6rem;
 }
 
+code {
+  line-height: 125%;
+  font-size: 1rem;
+  font-family: Inconsolata;
+}
