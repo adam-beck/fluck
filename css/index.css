@@ -1,16 +1,40 @@
 @import "normalize.css";
 
-* {
-  box-sizing: border-box;
+@import "./foundation.css";
+
+.home-posts-links {
+  text-align: center;
+
+  & ul {
+    list-style: none;
+  }
 }
 
-html {
-  font-size: 62.5%;
+.home-post-link a {
+  font-size: 4.5rem;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid black;
+  margin: 10px 0;
+  padding: 10px 30px;
+  border-radius: .4rem;
+  background-color: rgba(211, 211, 211, 0.26);
 }
 
-html, body {
-  height: 100%;
-  background-color: #F7F7F7;
+.home-post-link a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.home-post-link a:hover {
+  background-color: rgba(211, 211, 211, 0.50);
+}
+
+.post-content {
+  font-size: 2.1rem;
+  margin-top: 10rem;
+  width: 70%;
+  margin: 4rem auto 8rem;
 }
 
 header {
@@ -47,20 +71,6 @@ header:after {
 img {
   max-width: 100%;
 }
-
-main {
-  text-align: center;
-  font-size: 4em;
-
-  ul {
-    list-style: none;
-  }
-
-  li {
-    margin-bottom: 2.5rem;
-  }
-}
-
 
 /* @media screen and (min-width: 60rem) { */
 /*   header { */

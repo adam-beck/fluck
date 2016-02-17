@@ -1,11 +1,29 @@
-{{!< default}}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{@blog.title}}</title>
+    <link rel="stylesheet" href="{{asset "css/index.css"}}" />
 
-<main>
-  <ul>
-    {{#foreach posts}}
-      <li>
-        <a href="{{url}}">{{title}}</a>
-      </li>
-    {{/foreach}}
-  </ul>
-</main>
+    {{ghost_head}}
+
+  </head>
+  <body>
+
+    <header style="background-image: url({{@blog.cover}})">
+      <h1>{{@blog.title}}</h1>
+    </header>
+
+    <main class="home-posts-links">
+      <ul>
+        {{#foreach posts}}
+          <li class="home-post-link">
+            <a href="{{url}}">{{title}}</a>
+          </li>
+        {{/foreach}}
+      </ul>
+    </main>
+
+  </body>
+</html>

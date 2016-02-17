@@ -433,7 +433,54 @@ html {
 
 html, body {
   height: 100%;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
+  background-color: rgba(247, 247, 247, 0.22);
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.home-posts-links {
+  text-align: center
+}
+
+.home-posts-links ul {
+  list-style: none;
+}
+
+.home-post-link a {
+  font-size: 45px;
+  font-size: 4.5rem;
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid black;
+  margin: 10px 0;
+  padding: 10px 30px;
+  border-radius: .4rem;
+  background-color: #d3d3d3;
+  background-color: rgba(211, 211, 211, 0.26);
+}
+
+.home-post-link a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.home-post-link a:hover {
+  background-color: #d3d3d3;
+  background-color: rgba(211, 211, 211, 0.50);
+}
+
+.post-content {
+  font-size: 21px;
+  font-size: 2.1rem;
+  margin-top: 100px;
+  margin-top: 10rem;
+  width: 70%;
+  margin: 40px auto 80px;
+  margin: 4rem auto 8rem;
 }
 
 header {
@@ -482,20 +529,6 @@ header:after {
 
 img {
   max-width: 100%;
-}
-
-main {
-  text-align: center;
-  font-size: 4em;
-
-  ul {
-    list-style: none;
-  }
-
-  li {
-    margin-bottom: 25px;
-    margin-bottom: 2.5rem;
-  }
 }
 
 /* @media screen and (min-width: 60rem) { */
