@@ -447,6 +447,7 @@ body {
 }
 
 .home-posts-links ul {
+  padding-left: 0;
   list-style: none;
 }
 
