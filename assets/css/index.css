@@ -422,44 +422,55 @@ code {
   font-family: Inconsolata;
 }
 .home-posts-links {
-  text-align: center
+}
+.home-posts-links li{
+  font-size: 20px;
+  font-size: 2rem;
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
 }
 .home-posts-links ul{
   padding-left: 0;
   list-style: none;
 }
 .home-post-link a {
-  font-size: 45px;
-  font-size: 4.5rem;
+  color: black;
   text-decoration: none;
   display: inline-block;
-  border: 3px solid black;
+  border: 3px solid #507f85;
+  border: 3px solid rgba(80, 127, 133, 0.03);
+  border: .3rem solid rgba(80, 127, 133, 0.03);
   margin: 10px 0;
+  margin: 1rem 0;
   padding: 10px 30px;
+  padding: 1rem 3rem;
   border-radius: .4rem;
   background-color: #d3d3d3;
-  background-color: rgba(211, 211, 211, 0.26);
+  background-color: rgba(211, 211, 211, 0.08);
 }
 .home-post-link a:visited {
   text-decoration: none;
   color: black;
 }
 .home-post-link a:hover {
-  background-color: #d3d3d3;
-  background-color: rgba(211, 211, 211, 0.50);
+  background-color: #f1efef;
+  background-color: rgba(241, 239, 239, 0.35);
 }
 .post {
-  font-size: 21px;
-  font-size: 2.1rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 100px;
   margin-top: 10rem;
-  width: 70%;
+  width: 80%;
   margin: 40px auto 80px;
   margin: 4rem auto 8rem;
+  line-height: 1.35;
 }
 header {
   min-height: 200px;
-  height: 40vh;
+  min-height: 20rem;
+  height: 40%;
   background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
@@ -474,13 +485,14 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  position: relative
+  position: relative;
+  text-align: center
 }
 header h1{
-  font-size: 80px;
-  font-size: 8rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 30px 10px;
+  padding: 3rem 1rem;
+  font-size: 6vw;
+  margin: 0;
 }
 header:after {
   width: 100%;
@@ -493,6 +505,9 @@ header:after {
   background: -webkit-linear-gradient(left, #5bd6e6 0%, #16c087 28%, #d08c3e 83%, #f9beb8 100%);
   background: -webkit-linear-gradient(left, rgba(91,214,230,1) 0%, rgba(22,192,135,1) 28%, rgba(208,140,62,1) 83%, rgba(249,190,184,1) 100%);
   background: linear-gradient(to right, rgba(91,214,230,1) 0%, rgba(22,192,135,1) 28%, rgba(208,140,62,1) 83%, rgba(249,190,184,1) 100%);
+}
+.home-template header h1 {
+  font-size: 17.4vw;
 }
 .wrapper {
   max-width: 100%;
@@ -508,6 +523,10 @@ img {
       font-size: 80px;
       font-size: 8rem;
     }
+  }
+
+  .home-template header h1 {
+    font-size: 14rem;
   }
 }
 

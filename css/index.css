@@ -5,7 +5,13 @@
 @import "./foundation.css";
 
 .home-posts-links {
-  text-align: center;
+
+  & li {
+    font-size: 2rem;
+    max-width: 250px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
   & ul {
     padding-left: 0;
@@ -14,14 +20,14 @@
 }
 
 .home-post-link a {
-  font-size: 4.5rem;
+  color: black;
   text-decoration: none;
   display: inline-block;
-  border: 3px solid black;
-  margin: 10px 0;
-  padding: 10px 30px;
+  border: .3rem solid rgba(80, 127, 133, 0.03);
+  margin: 1rem 0;
+  padding: 1rem 3rem;
   border-radius: .4rem;
-  background-color: rgba(211, 211, 211, 0.26);
+  background-color: rgba(211, 211, 211, 0.08);
 }
 
 .home-post-link a:visited {
@@ -30,30 +36,32 @@
 }
 
 .home-post-link a:hover {
-  background-color: rgba(211, 211, 211, 0.50);
+  background-color: rgba(241, 239, 239, 0.35);
 }
 
 .post {
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   margin-top: 10rem;
-  width: 70%;
+  width: 80%;
   margin: 4rem auto 8rem;
+  line-height: 1.35;
 }
 
 header {
-  min-height: 200px;
-  height: 40vh;
+  min-height: 20rem;
+  height: 40%;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   position: relative;
+  text-align: center;
 
   & h1 {
-    font-size: 8rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding: 3rem 1rem;
+    font-size: 6vw;
+    margin: 0;
   }
 }
 
@@ -65,6 +73,10 @@ header:after {
   left: 0;
   content: '';
   background: linear-gradient(to right, rgba(91,214,230,1) 0%, rgba(22,192,135,1) 28%, rgba(208,140,62,1) 83%, rgba(249,190,184,1) 100%);
+}
+
+.home-template header h1 {
+  font-size: 17.4vw;
 }
 
 .wrapper {
@@ -82,5 +94,9 @@ img {
     h1 {
       font-size: 8rem;
     }
+  }
+
+  .home-template header h1 {
+    font-size: 14rem;
   }
 }
