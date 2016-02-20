@@ -13,6 +13,7 @@ var postcssImport = require('postcss-import');
 var autoprefixer = require('autoprefixer');
 var cssNext = require('postcss-cssnext');
 var exit = require('gulp-exit');
+var atImport = require('postcss-import');
 
 gulp.task('serve', ['watch'], function() {
   browserSync.init({
@@ -65,6 +66,7 @@ gulp.task('build', function() { return compile(); });
 gulp.task('styles', function() {
 
   var processors = [
+    atImport,
     postcssImport,
     autoprefixer,
     cssNext
