@@ -42,8 +42,8 @@
 .post {
   font-size: 1.5rem;
   margin-top: 10rem;
-  max-width: 960px;
-  width: 90%;
+  max-width: 780px;
+  width: 85%;
   margin: 4rem auto 8rem;
   line-height: 1.35;
 }
@@ -63,6 +63,7 @@ header {
     padding: 2rem 1rem;
     font-size: 10vw;
     margin: 0;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.75);
   }
 }
 
