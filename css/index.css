@@ -75,6 +75,7 @@ header:after {
   left: 0;
   content: '';
   background: linear-gradient(to right, rgba(91,214,230,1) 0%, rgba(22,192,135,1) 28%, rgba(208,140,62,1) 83%, rgba(249,190,184,1) 100%);
+  box-shadow: 0px 0px 8px grey;
 }
 
 .home-template header h1 {
@@ -131,5 +132,29 @@ header:after {
       font-size: 5vw;
     }
   }
+}
+
+.back-to-home {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+}
+
+.back-to-home:hover {
+  background-color: white;
+}
+
+.back-to-home img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 

@@ -415,7 +415,6 @@ body {
 }
 html, body {
   height: 100%;
-  background-color: #f7f7f7;
   background-color: rgba(247, 247, 247, 0.22);
 }
 img {
@@ -445,7 +444,6 @@ code {
   color: black;
   text-decoration: none;
   display: inline-block;
-  border: 3px solid #507f85;
   border: 3px solid rgba(80, 127, 133, 0.03);
   border: .3rem solid rgba(80, 127, 133, 0.03);
   margin: 10px 0;
@@ -453,7 +451,6 @@ code {
   padding: 10px 30px;
   padding: 1rem 3rem;
   border-radius: .4rem;
-  background-color: #d3d3d3;
   background-color: rgba(211, 211, 211, 0.08);
 }
 .home-post-link a:visited {
@@ -461,7 +458,6 @@ code {
   color: black;
 }
 .home-post-link a:hover {
-  background-color: #f1efef;
   background-color: rgba(241, 239, 239, 0.35);
 }
 .post {
@@ -481,15 +477,12 @@ header {
   height: 40%;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
@@ -511,9 +504,9 @@ header:after {
   position: absolute;
   left: 0;
   content: '';
-  background: -webkit-linear-gradient(left, #5bd6e6 0%, #16c087 28%, #d08c3e 83%, #f9beb8 100%);
   background: -webkit-linear-gradient(left, rgba(91,214,230,1) 0%, rgba(22,192,135,1) 28%, rgba(208,140,62,1) 83%, rgba(249,190,184,1) 100%);
   background: linear-gradient(to right, rgba(91,214,230,1) 0%, rgba(22,192,135,1) 28%, rgba(208,140,62,1) 83%, rgba(249,190,184,1) 100%);
+  box-shadow: 0px 0px 8px grey;
 }
 .home-template header h1 {
   font-size: 20vw;
@@ -564,6 +557,28 @@ header:after {
   header h1{
     font-size: 5vw;
   }
+}
+.back-to-home {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+}
+.back-to-home:hover {
+  background-color: white;
+}
+.back-to-home img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 

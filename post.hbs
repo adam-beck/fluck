@@ -4,10 +4,17 @@
 
   <header style="background-image: url({{@blog.cover}})">
     <h1>{{title}}</h1>
+    <!-- TODO: add back-to-home button -->
+    <!-- <div class="back-to-home"> -->
+    <!--   <a href="/"> -->
+    <!--     <img src={{asset "images/home.svg"}} /> -->
+    <!--   </a> -->
+    <!-- </div> -->
   </header>
 
   <main>
     <article class="{{post_class}}">
+      <img src={{image}}>
       {{content}}
     </article>
   </main>
