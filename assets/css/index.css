@@ -550,23 +550,15 @@ header:after {
     list-style: none;
   }
 }
-@media screen and (min-width: 900px) {
-  header {
-    height: 40vh
-  }
-  header h1{
-    font-size: 5vw;
-  }
-}
 .back-to-home {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   display: inline-block;
   background-color: rgba(255,255,255,0.8);
   border-radius: 50%;
-  top: 20px;
-  left: 20px;
+  top: 5px;
+  left: 5px;
 }
 .back-to-home:hover {
   background-color: white;
@@ -580,6 +572,35 @@ header:after {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.meta {
+  text-align: center;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 600px) {
+  .back-to-home {
+    width: 70px;
+    height: 70px;
+    left: 10px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  header {
+    height: 40vh
+  }
+  header h1{
+    font-size: 5vw;
+  }
+
+  .back-to-home {
+    width: 90px;
+    height: 90px;
+    left: 10px;
+    top: 10px;
+  }
+}
+
 
 
 /*# sourceMappingURL=index.css.map */
